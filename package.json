@@ -1,0 +1,53 @@
+{
+  "name": "runners-bn-frontend",
+  "version": "1.0.0",
+  "description": "Barefoot nomad is an application that will enable its “Company Nomads” book their international travel and accommodation globally; easily and conveniently across all the locations/centers where the Company has its operations.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlp-rwanda/runners-bn-frontend.git"
+  },
+  "keywords": [
+    "bn",
+    "frontend"
+  ],
+  "author": "Andela Runners",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atlp-rwanda/runners-bn-frontend/issues"
+  },
+  "homepage": "https://github.com/atlp-rwanda/runners-bn-frontend#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/register": "^7.13.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^5.2.0",
+    "prettier": "2.2.1",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
