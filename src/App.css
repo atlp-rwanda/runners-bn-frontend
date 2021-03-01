@@ -1,3 +1,56 @@
 h1 {
-    text-align: center;
-  }
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.navbar {
+  width: 100vw;
+  height: 80px;
+  background-color: teal;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 15rem 30rem;
+}
+
+.navbar .logo {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.navbar .navlinks {
+  margin-right: 0;
+  text-align: right;
+  float: right;
+}
+.navbar .navlinks ul {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  /* margin-right: 10px; */
+  float: right;
+}
+.navbar .navlinks ul li {
+  list-style: none;
+  justify-content: space-between;
+  padding: 10px;
+}
+.navbar .navlinks ul li a {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  margin-right: 20px;
+}
