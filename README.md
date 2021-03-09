@@ -1,5 +1,13 @@
 # runners-bn-frontend
 
+[![Coverage Status](https://coveralls.io/repos/github/atlp-rwanda/runners-bn-frontend/badge.svg?branch=develop)](https://coveralls.io/github/atlp-rwanda/runners-bn-frontend?branch=develop)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/a23a117b88dd1ee1305d/maintainability)](https://codeclimate.com/github/atlp-rwanda/runners-bn-frontend/maintainability)
+
+[![Build Status](https://travis-ci.org/atlp-rwanda/runners-bn-frontend.svg?branch=develop)](https://travis-ci.org/atlp-rwanda/runners-bn-frontend)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a23a117b88dd1ee1305d/test_coverage)](https://codeclimate.com/github/atlp-rwanda/runners-bn-frontend/test_coverage)
+
 Barefoot nomad is an application that will enable its “Company Nomads” book their international travel and accommodation globally; easily and conveniently across all the locations/centers where the Company has its operations.
 
 # Installation setup and running application
