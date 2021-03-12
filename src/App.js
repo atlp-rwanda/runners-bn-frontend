@@ -9,7 +9,7 @@ const App = () => (
     <div className="container">
       <NavBar />
       <Routes />
-      <h1>Barefoot Nomad</h1>
+      <h1 className="text-3xl font-bold">Barefoot Nomad</h1>
     </div>
   </Router>
 );
