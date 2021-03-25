@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Typography } from '@material-ui/core';
 import { describe, it, expect } from '@jest/globals';
-import PageNotFound from '../components/PageNotFound';
+import PageNotFound from '../src/components/PageNotFound';
 
 describe('rendering components', () => {
   it('renders pageNotFound components without crashing', () => {

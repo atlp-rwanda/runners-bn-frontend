@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import {
   describe, it, expect,
 } from '@jest/globals';
-import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
+import ErrorBoundary from '../src/components/ErrorBoundary/ErrorBoundary';
 
 describe('error boundary', () => {
   it('renders an error', () => {

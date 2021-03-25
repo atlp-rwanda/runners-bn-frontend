@@ -2,6 +2,7 @@ require('dotenv/config.js');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const { PORT, BASE_URL } = process.env;
 
@@ -9,6 +10,7 @@ module.exports = {
   entry: {
     index: path.join(__dirname, 'src', 'index.js'),
   },
+  // entry: ['babel-polyfill', './src/index.js'],
   output: {
     path: path.join(__dirname, '/build'),
     filename: 'index.bundle.js',
@@ -40,11 +42,20 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|mp3|ogg|m4r)$/i,
-        use: [{ loader: 'file-loader' }],
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 8192,
+          },
+        }],
       },
     ],
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'styles.css',
+      chunkFilename: 'styles.css',
+    }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public/index.html'),
     }),
