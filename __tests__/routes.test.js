@@ -2,8 +2,8 @@ import React from 'react';
 import { Switch } from 'react-router-dom';
 import { shallow } from 'enzyme';
 import { describe, it, expect } from '@jest/globals';
-import Router from '../routers/Routers';
-import App from '../App';
+import Router from '../src/routers/Routers';
+import App from '../src/App';
 
 describe('Test <Router />', () => {
   it('should contains Router', () => {

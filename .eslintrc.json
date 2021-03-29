@@ -16,5 +16,16 @@
     "linebreak-style": 0,
     "react/jsx-no-undef": "off",
     "react/jsx-filename-extension": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.js",
+        "**/*.test.jsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }

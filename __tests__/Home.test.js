@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { describe, it } from '@jest/globals';
-import NavBar from '../components/NavBar';
+import Home from '../src/components/Home';
 
 describe('Simple component test', () => {
-  it('should renders Navbar components', () => {
-    shallow(<NavBar />);
+  it('should renders Home components', () => {
+    shallow(<Home />);
   });
 });
