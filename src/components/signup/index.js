@@ -145,11 +145,6 @@ const signup = (props) => {
                     <span role="alert">Password should be at-least 8 characters.</span>
                   )}
                 </p>
-                <p className="w-full col-span-2 text-red-500 text-center">
-                  {errors.password && errors.password.type === 'required' && (
-                    <span role="alert">No password provided</span>
-                  )}
-                </p>
                 <input
                   name="confirmPassword"
                   type="password"
