@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/aria-role */
 /* eslint-disable jsx-a11y/no-autofocus */
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
@@ -47,7 +48,7 @@ const createRequest = () => {
           <div className="modal-content">
             <h2>
               {' '}
-              create
+              Create Trip Request
             </h2>
             <form
               data-testid="form"
@@ -103,6 +104,7 @@ const createRequest = () => {
               <div className="button-container">
                 <button
                   type="submit"
+                  data-testid="button"
                   style={{
                     fontSize: '70%',
                     width: '30%',

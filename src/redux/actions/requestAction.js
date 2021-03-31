@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable no-unused-expressions */
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -23,6 +24,8 @@ export const getRequestsAction = () => async (dispatch) => {
       },
     });
     const { data } = response.data;
+    // data.forEach(({ destination, departure }) => console.log(`destination is ${destination.name} departure is ${departure.name}`));
+
     dispatch({
       type: GETTING_REQUESTS_SUCCESS,
       payload: data,

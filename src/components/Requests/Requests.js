@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './Requests.scss';
@@ -41,6 +42,12 @@ export default function Requests() {
                   to
                 </th>
                 <th className="px-5 py-3 border-b-2 border-gray-200 text-center text-xxs font-semibold uppercase tracking-wider">
+                  departure
+                </th>
+                <th className="px-5 py-3 border-b-2 border-gray-200 text-center text-xxs font-semibold uppercase tracking-wider">
+                  destination
+                </th>
+                <th className="px-5 py-3 border-b-2 border-gray-200 text-center text-xxs font-semibold uppercase tracking-wider">
                   reason
                 </th>
                 <th className="px-5 py-3 border-b-2 border-gray-200 text-center text-xxs font-semibold uppercase tracking-wider dates">
@@ -60,7 +67,11 @@ export default function Requests() {
             <tbody>
               {states.requests
                 && states.requests.map((data) => (
-                  <tr data-testid="requests-data" key={data.id}>
+                  <tr
+                    key={data.id}
+                    className="requests"
+                    data-testid="requests-data"
+                  >
                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-l text-center">
                       <p
                         data-testid="request"
@@ -77,6 +88,16 @@ export default function Requests() {
                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-l dates text-center">
                       <p className="text-gray-900 whitespace-no-wrap">
                         {data.to}
+                      </p>
+                    </td>
+                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-l dates text-center">
+                      <p className="text-gray-900 whitespace-no-wrap">
+                        {/* {data.departure.name} */}
+                      </p>
+                    </td>
+                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-l dates text-center">
+                      <p className="text-gray-900 whitespace-no-wrap">
+                        {data.destination.name}
                       </p>
                     </td>
                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-l dates text-center">
